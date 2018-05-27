@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/custom_record_rlMaster1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/custom_record_ivMotorku"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/motorku"/>
+        <TextView
+            android:id="@+id/custom_record_tvPlatNomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/custom_record_ivMotorku"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Plat Nomer"/>
+        <TextView
+            android:id="@+id/custom_record_tvNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/custom_record_tvPlatNomer"
+            android:layout_toRightOf="@+id/custom_record_ivMotorku"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignRight="@+id/custom_record_tvTime"
+            android:singleLine="true"
+            android:text="Note"/>
+        <TextView
+            android:id="@+id/custom_record_tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Time"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_below="@+id/custom_record_rlMaster1"></RelativeLayout>
+</RelativeLayout>

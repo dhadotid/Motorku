@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.rsypj.motorku.ui.MenuActivity"
+    tools:showIn="@layout/app_bar_menu">
+
+    <RelativeLayout
+        android:id="@+id/rlMaster1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_centerInParent="true"
+                android:text="5"
+                android:textSize="50dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/rl1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sedang Service"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_below="@id/rlMaster1"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMaster2"
+        android:layout_below="@id/rlMaster1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textSize="50dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/rl2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record Service"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_below="@id/rlMaster2"></RelativeLayout>
+
+    <Button
+        android:id="@+id/btnPanggilKurir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Panggil Kurir"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
